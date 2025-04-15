@@ -1,0 +1,1534 @@
+/* CSS De la barre de navigation */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    background-image: url('/images/background3.jpg'); /* Image spécifique pour cette vue */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 80vh;
+}
+header {
+    font-size: 25px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+header h1 {
+    flex: 1;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+header a {
+    position: absolute;
+    right: 20px; /* Ajuste la distance à droite */
+}
+
+.search-bar input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+.signup {
+    background-color: #ebe3e3;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #2c3e50;
+    padding: 10px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+nav button {
+    background: #ebe3e3;
+    color: black;
+    border: none;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+main {
+    padding: 20px;
+}
+.highlight {
+    display: flex;
+    background: #c6c6c6;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.highlight img {
+    width: 40%;
+    border-radius: 10px;
+}
+.highlight .text {
+    padding: 10px;
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+.info div {
+    background: #c6c6c6;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 5px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.events {
+    background-color: #c6c6c6;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.events ul {
+    list-style-type: none;
+    padding: 0;
+}
+.events ul li {
+    padding: 5px 0;
+}
+
+section {
+    background: white;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px; /*arrondir les angles de la box*/
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /*ajoute une ombre au box pour avoir un effet de relief*/
+}
+
+h2 {
+    color: #2c3e50;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #c6c6c6;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #c75b5b;
+    font-weight: bold;
+}
+
+li {
+    color:black;
+}
+
+nav a {
+    color: black;
+}
+
+nav ul {
+    background-color: #c6c6c6;
+    border-radius: 10px;
+}
+
+/* CSS Page évènements */
+
+.evenements h1 {
+    text-align: center;
+    color: #333;
+}
+
+.evenements a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+
+
+.evenements a:hover {
+    text-decoration: underline;
+}
+
+.evenements div {
+    background: white;
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+}
+
+.evenements h2 {
+    color: #444;
+}
+
+.evenements p {
+    color: #666;
+    margin: 5px 0;
+}
+
+.evenements button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.evenements button:hover {
+    background-color: #c82333;
+}
+
+/*CSS Crée un évènement */
+
+.cree-evenements {
+    width: 50%;
+    margin: 20px auto;
+    background: white;
+    padding-right: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cree-evenements h1 {
+    text-align: center;
+    color: #333;
+}
+
+.cree-evenements label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.cree-evenements input,
+.cree-evenements textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.cree-evenements textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.cree-evenements button {
+    display: block;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.cree-evenements button:hover {
+    background-color: #0056b3;
+}
+
+/* CSS Modification d'événement */
+
+.modifier-event {
+    width: 50%;
+    margin: 20px auto;
+    background: white;
+    padding-right: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modifier-event h1 {
+    text-align: center;
+    color: #333;
+}
+
+.modifier-event label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.modifier-event input,
+.modifier-event textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.modifier-event textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.modifier-event button {
+    display: block;
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.modifier-event button:hover {
+    background-color: #218838;
+}
+
+
+/* CSS des lieux */
+
+/* CSS Page Liste des lieux */
+
+.lieux {
+    width: 60%;
+    margin: 20px auto;
+    background: white;
+    padding-right: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.lieux h1, .lieux h2 {
+    text-align: center;
+    color: #333;
+}
+
+.lieux form {
+    margin-bottom: 20px;
+}
+
+.lieux label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.lieux input,
+.lieux select,
+.lieux textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.lieux textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+.lieux button {
+    display: block;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.lieux button:hover {
+    background-color: #0056b3;
+}
+
+.lieux div {
+    background: white;
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.lieux h3 {
+    color: #444;
+}
+
+.lieux p {
+    color: #666;
+    margin: 5px 0;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    color: black;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.lieu-box {
+    width: 60%;
+    margin: 20px auto;
+    background: #e1dbdb;
+    padding-right: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS Modofication des lieux */
+
+.modif-lieu {
+    max-width: 500px;
+    margin: 40px auto;
+    padding-right: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modif-lieu form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modif-lieu label {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+.modif-lieu input,
+.modif-lieu select,
+.modif-lieu textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.modif-lieu textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.modif-lieu button {
+    margin-top: 20px;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.modif-lieu button:hover {
+    background: #0056b3;
+}
+
+/* CSS Réservation */
+
+.reserver {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.reserver h2 {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.reserver h2:hover {
+    color: #0056b3;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background: #007bff;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+.btn-danger {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.btn-danger:hover {
+    background: #c82333;
+}
+
+.boutton-reserver {
+    width: 60%;
+    margin: 20px auto;
+    background: #e1dbdb;
+    padding-right: 35px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS Reserver un lieu particulier */
+
+.reserver-lieu {
+    max-width: 500px;
+    margin: 40px auto;
+    padding-right: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.reserver-lieu h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.reserver-lieu form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.reserver-lieu label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+}
+
+.reserver-lieu input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.reserver-lieu button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.reserver-lieu button:hover {
+    background: #218838;
+}
+
+.reserver-lieu div[style="color: red;"] {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.liste-obj {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.liste-obj h1 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.alert-success {
+    background: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.table th, .table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.table th {
+    background: #007bff;
+    color: white;
+}
+
+.table tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+.table tr:hover {
+    background: #ddd;
+}
+
+/* CSS modification objets */
+
+.modif-obj {
+    max-width: 600px;
+    margin: 40px auto;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.modif-obj h1 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.modif-obj form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modif-obj label {
+    font-weight: bold;
+    text-align: left;
+}
+
+.modif-obj input,
+.modif-obj select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.modif-obj button {
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.modif-obj button:hover {
+    background: #0056b3;
+}
+
+/* CSS création d'objet connecté */
+
+.cree-obj {
+    max-width: 600px;
+    margin: 40px auto;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cree-obj h1 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.cree-obj form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cree-obj label {
+    font-weight: bold;
+    text-align: left;
+}
+
+.cree-obj input,
+.cree-obj select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.cree-obj button {
+    background: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cree-obj button:hover {
+    background: #218838;
+}
+
+/* CSS recherche d'utilisateurs */
+
+.recherche-users {
+    max-width: 800px;
+    margin: 40px auto;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.recherche-users h1, 
+.recherche-users h2 {
+    color: #007bff;
+    text-align: center;
+}
+
+.recherche-users form {
+    margin-bottom: 20px;
+}
+
+.recherche-users .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.recherche-users .col {
+    flex: 1;
+    min-width: 150px;
+}
+
+.recherche-users input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.recherche-users button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.recherche-users .btn-primary {
+    background: #007bff;
+    color: white;
+}
+
+.recherche-users .btn-primary:hover {
+    background: #0056b3;
+}
+
+.recherche-users .btn-secondary {
+    background: #6c757d;
+    color: white;
+}
+
+.recherche-users .btn-secondary:hover {
+    background: #545b62;
+}
+
+.recherche-users .list-group {
+    list-style: none;
+    padding: 0;
+}
+
+.recherche-users .list-group-item {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.recherche-users .btn-info {
+    background: #17a2b8;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.recherche-users .btn-info:hover {
+    background: #138496;
+}
+
+/* CSS page de profile */
+
+.profil {
+    display: flex;
+    justify-content: center;
+    background-color: #f8f9fa;
+}
+
+.profil .container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.profil h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.profil p {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.profil .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 15px;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.profil .btn:hover {
+    background-color: #0056b3;
+}
+
+/* CSS page de profile */
+
+.profil {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.profil h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.profil ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.profil li {
+    font-size: 16px;
+    color: #555;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.profil li strong {
+    color: #333;
+}
+
+.profil h2 {
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+.profil p {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* CSS Modifier le profil */
+
+.edit-profile {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.edit-profile h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.edit-profile form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.edit-profile label {
+    font-weight: bold;
+    text-align: left;
+    color: #333;
+}
+
+.edit-profile input,
+.edit-profile button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.edit-profile button {
+    background: #28a745;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.edit-profile button:hover {
+    background: #218838;
+}
+
+.edit-profile .alert-success {
+    background: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Fix input overflow and adjust password toggle button */
+
+.edit-profile input {
+    width: calc(100% - 20px); /* Prevent overflow by accounting for padding */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.edit-profile .input-group button {
+    background: transparent;
+    border: none;
+    color: #555;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0 5px;
+    transition: color 0.3s ease;
+}
+
+.edit-profile .input-group button:hover {
+    color: #333;
+}
+
+/* CSS Register */
+
+.register {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 25px;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    border: 2px solid #007bff;
+}
+
+.register .card {
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.register .card-header {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 20px;
+    border-bottom: 3px solid #004085;
+}
+
+.register .btn-primary {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border: none;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+.register .btn-primary:hover {
+    background: linear-gradient(135deg, #0056b3, #003f7f);
+    transform: scale(1.1);
+}
+
+.register a.nav-link {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: color 0.3s ease, text-decoration 0.3s ease, transform 0.2s ease;
+    font-size: 1.1rem;
+}
+
+.register a.nav-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+    font-style: italic;
+    transform: scale(1.05);
+}
+
+.register form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.register .form-control {
+    width: 80%;
+    max-width: 400px;
+    text-align: left;
+}
+
+.register label {
+    width: 80%;
+    max-width: 400px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* CSS Login */
+
+.login {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 25px;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    border: 2px solid #007bff;
+}
+
+.login .card {
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.login .card-header {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 20px;
+    border-bottom: 3px solid #004085;
+}
+
+.login .btn-primary {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border: none;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+.login .btn-primary:hover {
+    background: linear-gradient(135deg, #0056b3, #003f7f);
+    transform: scale(1.1);
+}
+
+.login a.nav-link {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: color 0.3s ease, text-decoration 0.3s ease, transform 0.2s ease;
+    font-size: 1.1rem;
+}
+
+.login a.nav-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+    font-style: italic;
+    transform: scale(1.05);
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.login .form-control {
+    width: 80%;
+    max-width: 400px;
+    text-align: left;
+}
+
+.login label {
+    width: 80%;
+    max-width: 400px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Confirm, Email, and Reset Page Styles */
+.confirm, .email, .reset {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.confirm h2, .email h2, .reset h2 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.confirm form, .email form, .reset form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.confirm label, .email label, .reset label {
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+    width: 100%;
+}
+
+.confirm input, .email input, .reset input,
+.confirm button, .email button, .reset button {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.confirm button, .email button, .reset button {
+    background: #28a745;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.confirm button:hover, .email button:hover, .reset button:hover {
+    background: #218838;
+}
+
+.confirm .alert-success, .email .alert-success, .reset .alert-success {
+    background: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Show Page Style */
+.show {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.show h1 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.show p {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.show a.btn {
+    margin-top: 15px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.show a.btn:hover {
+    background-color: #0056b3;
+}
+
+/* CSS Modif users */
+
+.edit-utilisateur {
+    display: flex;
+    justify-content: center;
+}
+
+.edit-utilisateur .container {
+    background: white;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+}
+
+.edit-utilisateur h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.edit-utilisateur .form-label {
+    font-weight: bold;
+}
+
+.edit-utilisateur .form-control {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.edit-utilisateur .form-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.edit-utilisateur .btn-primary {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.edit-utilisateur .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* CSS Module admin */
+.module-admin .titre {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.module-admin h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.module-admin .alert {
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.module-admin table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.module-admin th, .module-admin td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.module-admin th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.module-admin tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.module-admin .btn {
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    display: inline-block;
+    margin: 5px;
+}
+
+.module-admin .btn-warning {
+    background-color: #ffc107;
+    color: white;
+}
+
+.module-admin .btn-warning:hover {
+    background-color: #e0a800;
+}
+
+.module-admin .btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.module-admin .btn-danger:hover {
+    background-color: #c82333;
+}
+
+.module-admin .btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.module-admin .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.module-admin form {
+    display: inline;
+}
+
+.module-admin a {
+    display: inline-block;
+    margin: 10px;
+}
+
+.historique .titre {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.historique h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.liste-signalement .titre {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.liste-signalement h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
